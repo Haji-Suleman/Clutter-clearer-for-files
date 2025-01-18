@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>File Organizer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            padding: 2em;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .feature-list, .steps-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li, .steps-list li {
+            background: #f4f4f9;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .install-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .install-button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>File Organizer</h1>
+    <p>Automatically organizes your files based on their extensions!</p>
+</header>
+
+<section>
+    <h2>Features</h2>
+    <ul class="feature-list">
+        <li>Organizes files into directories based on their extensions.</li>
+        <li>Simple web server built with Express.js.</li>
+        <li>Automatically organizes files when the server starts.</li>
+        <li>Basic error handling for file operations.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Installation</h2>
+    <ol class="steps-list">
+        <li>Clone the repository:</li>
+        <pre><code>git clone https://github.com/your-username/file-organizer.git</code></pre>
+        <li>Navigate to the project directory:</li>
+        <pre><code>cd file-organizer</code></pre>
+        <li>Install dependencies:</li>
+        <pre><code>npm install</code></pre>
+    </ol>
+    <a href="https://github.com/your-username/file-organizer" class="install-button">Visit on GitHub</a>
+</section>
+
+<section>
+    <h2>Usage</h2>
+    <ol class="steps-list">
+        <li>Start the server:</li>
+        <pre><code>npm start</code></pre>
+        <li>Open a browser and go to <strong>http://localhost:3000</strong> to view the file list.</li>
+    </ol>
+</section>
+
+<section>
+    <h2>How It Works</h2>
+    <p>The application reads files in a specified directory and moves them to subdirectories based on their file extensions.</p>
+    <ul class="feature-list">
+        <li>Directories are created automatically for each file extension.</li>
+        <li>Files are moved to their respective extension folders.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Error Handling</h2>
+    <p>Errors during file reading or moving are logged to the console for troubleshooting.</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 File Organizer. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
